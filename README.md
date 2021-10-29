@@ -1,6 +1,6 @@
 # Status Service
 
-- Owner: Anand Totala (@Aanandt-huma)
+- Owner: Anand Totala (@anandt-huma)
 - Reviewers: Compose Operator Maintainers
 - Status: Draft, Revision 0.1
 
