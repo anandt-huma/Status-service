@@ -10,9 +10,8 @@
 - Fetch the status of applcation.(provided name/namespace/cluster).
 
 ## Design Proposal
-x-special/nautilus-clipboard
-copy
-file:///home/anand/Pictures/diag.png
+
+![diagram](diag.png)
 
 - Creating a new service, which will expose API to fetch the information based on above use cases.
 - Service will interact with kubernetes cluster API to fetch the details.
