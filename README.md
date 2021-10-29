@@ -25,6 +25,8 @@
 ## Open Questions
  - Where this service weill be deployed ?
 
+## Links
+ - ![kube-oidc](https://www.jetstack.io/blog/kube-oidc-proxy/)
 
 ## Note
 ```
