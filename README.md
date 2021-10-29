@@ -1,5 +1,8 @@
-# Status-service
-A service to fetch application status on a k8s cluster
+# Status Service
+
+- Owner: Anand Totala (@Aanandt-huma)
+- Reviewers: Compose Operator Maintainers
+- Status: Draft, Revision 0.1
 
 ## Use Case
 - Fetch the status of applications in a cluster
@@ -10,7 +13,8 @@ A service to fetch application status on a k8s cluster
 
 - Creating a new service, which will expose API to fetch the information based on above use cases.
 - Service will interact with kubernetes cluster API to fetch the details.
-- Service will not interact directl with Huma compose-operator, thus removing the coupling between both the services.
+- Service will not interact directly with Huma compose-operator, thus removing the coupling between both the services.
+- This service can be extended on future to more funvtionslity.
 - Service need to have kubeconfig file with details of all the cluster where we will  be deploying application CR or 
   some other solution like OIDC to interact with multiple k8s clusters.
 - If all the clusters are on GKE or some single cloud, a service account can be passed to status service, service can utilize go-sdk 
@@ -19,4 +23,5 @@ A service to fetch application status on a k8s cluster
 ## Note
 ```
 This is first draft of the service proposal and can be changed based on feedback recieved.
+
 ```
