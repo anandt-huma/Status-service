@@ -4,7 +4,7 @@
 - Reviewers: Compose Operator Maintainers
 - Status: Draft, Revision 0.1
 
-## Use Case
+## Initial Use Cases
 - Fetch the status of applications in a cluster
 - Fetch the status of applications in a namespace.
 - Fetch the status of applcation.(provided name/namespace/cluster).
@@ -19,6 +19,10 @@
   some other solution like OIDC to interact with multiple k8s clusters.
 - If all the clusters are on GKE or some single cloud, a service account can be passed to status service, service can utilize go-sdk 
   for cloud provider and get the kubeconfig info or application details directly.
+
+## Open Questions
+ - Where this service weill be deployed ?
+
 
 ## Note
 ```
