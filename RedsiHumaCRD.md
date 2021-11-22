@@ -127,6 +127,7 @@ spec:
     envVarName: REDIS_URL
 ```
 - compose-operator will be able to create RedisClaim based on config provided above
+```yaml
 apiVersion: operator.huma.com/v1alpha1
 kind: RedisClaim
 metadata:
@@ -161,4 +162,5 @@ status:
 - This RedisClaim controller will create the necessary external resource specified here and can be utilised by App CR.
 
 ## High Level Design Diagram of proposed solution.
-<img src="https://lucid.app/lucidchart/63b5e1f5-34fb-4edf-ba0f-ca6d45d9934b/edit?viewport_loc=-11%2C-11%2C2123%2C1068%2C0_0&invitationId=inv_df0df03e-70c9-40a3-96bc-ec8d48c4419d">
+ 
+![diagram](RedisClaim.png)
