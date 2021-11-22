@@ -18,41 +18,39 @@ spec:
   ports:
     - "80"
 ---
-apiVersion: db.operator.huma.com/v1alpha1
-kind: RedisDB
+apiVersion: operator.huma.com/v1alpha1
+kind: RedisClaim
 metadata:
   name: test-redis
   namespace: redis
 spec:
-  Redis:
-    storage: 1Gi
-    tlsEnabled: true
-    certsMountPath: /cert
+  storage: 1Gi
+  tlsEnabled: true
+  certsMountPath: /cert
 ```
 
 ### Steps:
-- Create RedisDB CRD first.
+- Create RedisClaim CRD first.
 - Create Application
 
 ### Create RedisDB:
 - Input CRD:
 ```yaml
-apiVersion: db.operator.huma.com/v1alpha1
-kind: RedisDB
+apiVersion: operator.huma.com/v1alpha1
+kind: RedisClaim
 metadata:
   name: test-redis
   namespace: redis
 spec:
-  Redis:
-    storage: 1Gi
-    tlsEnabled: true
-    certsMountPath: /cert
+  storage: 1Gi
+  tlsEnabled: true
+  certsMountPath: /cert
 ```
 
-- RedisDB after creation and injection of required variables and data
+- RedisClaim after creation and injection of required variables and data
 ```yaml
-apiVersion: db.operator.huma.com/v1alpha1
-kind: RedisDB
+apiVersion: operator.huma.com/v1alpha1
+kind: RedisClaim
 metadata:
   name: test-redis
   namespace: redis
